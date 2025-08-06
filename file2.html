@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHADOWBYTE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+</head>
+<body>
+ <div class="title">SHADOWBYTE</div>
+
+ <div class="menu">
+  <button onclick="showSection('info')">informasi group</button>
+<button onclick="showSection('joined')">joined</button>
+ </div>
+
+ <div id="info" class="content">
+  <div class="section-title"> welcomd to shadowbyte</div>
+  <div class="rules">
+    <p><strong> rules</strong></p>
+    <ul>
+      <li>no spam/iklam</li>
+      <li>hormati sesama anggota</li>
+      <li>gunakan info dengan etika dan tanggung jawab</li>
+    </ul>
+  </div>
+
+  <div class="section-title">SPONSOR link</div>
+
+<a class="link-button" href="https://defacer.net/team/ShadowByte" target="_blank">🔎 MIRROR - defacer.net</a>
+    <a class="link-button" href="https://haxor.id/archive/team/ShadowByte" target="_blank">🔎 MIRROR - haxor.id</a>
+    <a class="link-button" href="https://zone-xsec.com/archive/team/ShadowByte" target="_blank">🔎 MIRROR - zone-xsec.com</a>
+
+    <a class="link-button" href="https://shadowbyteam.blogspot.com" target="_blank">📚 BLOGGER</a>
+    <a class="link-button" href="https://github.com/SBngok" target="_blank">🐱 GITHUB</a>
+    <a class="link-button" href="https://whatsapp.com/channel/0029Vb5nqwyHQbS1YEwF2w3I" target="_blank">📢 WHATSAPP CHANNEL</a>
+
+ </div>
+
+<div id="joined" class="content hidden">
+  <div class="section-title"join grup></div>
+  <a class="link-button" href="https://chat.whatsapp.com/IWDJNmErFxhCNdL9SvTHxW" target="_blank">KLIK UNTUK JOIN GRUP WHATSAPP</a>
+</div>
+
+<script>
+  function showSection(id) {
+    document.getElementById("info").classList.add("hidden");
+    document.getElementById("joined").classList.add("hidden");
+    document.getElementById(id).classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>
